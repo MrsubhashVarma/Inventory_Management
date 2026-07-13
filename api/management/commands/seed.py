@@ -75,7 +75,7 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         from api.db import categories_col, medicines_col, users_col, orders_col
 
-        self.stdout.write("🌱 Seeding Pharmacy Database...\n")
+        self.stdout.write("Seeding Pharmacy Database...\n")
 
         # Clear existing data
         categories_col().delete_many({})
@@ -156,7 +156,7 @@ class Command(BaseCommand):
         self.stdout.write(f"  ✓ Inserted {len(sample_orders)} sample orders")
 
         self.stdout.write(self.style.SUCCESS(
-            "\n✅ Database seeded successfully!\n"
+            "\nDatabase seeded successfully!\n"
             "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
             "Admin Login: admin@pharmacy.com / admin123\n"
             "Customer 1 : rahul@gmail.com / rahul123\n"
