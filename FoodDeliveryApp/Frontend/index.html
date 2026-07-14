@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">SwiggyPro</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="restaurants.html">Restaurants</a></li>
+            <li><a href="cart.html">Cart <span id="cart-count">0</span></a></li>
+            <li><a href="orders.html">Orders</a></li>
+            <li><a href="dashboard.html">Admin</a></li>
+            <li><a href="login.html" class="btn-primary">Login</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Delicious Food, Delivered Fast.</h1>
+            <p>Craving something? We have the best restaurants in town.</p>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for food, restaurants..." id="search-input">
+                <button onclick="searchFood()">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="featured">
+        <h2>Featured Restaurants</h2>
+        <div class="card-grid" id="restaurant-list">
+            <!-- Populated by JS -->
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
